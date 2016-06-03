@@ -1,4 +1,5 @@
-stil{
-	width: 1600px;
-	border: 1px solid;
+.stil{
+	font-size: 50px;
+	border: 5px solid;
+	text-align: center;
 }
