@@ -3,3 +3,6 @@
 	border: 5px solid;
 	text-align: center;
 }
+.error{
+	border: 1px solid red;
+}
