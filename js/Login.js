@@ -10,20 +10,22 @@ function showMessage() {
 }
 showMessage();*/
 
-document.getElementById('id-but').onclick = function(event){
-	validation();
+document.getElementById('submit').onclick = function(event){
+	return validation();
 }
 
 function validation(){
-	var document.getElementById('id-login');
-	var document.getElementById('id-pass');
-	var Lodinflag = false;
+	var login=document.getElementById('login');
+	var loginLeght=login.value;
+	var pass=document.getElementById('pass');
+	var passLeght=pass.value;
+	var Loginflag = false;
 	var Passflag = false;
 	if(login.value == ''){
-		Lodinflag = false;
+		Loginflag = false;
 		login.classList.add('error');
 	}else{
-		Lodinflag = true;
+		Loginflag = true;
 		login.classList.remove('error');
 	}
 	if(login.value == ''){
@@ -33,7 +35,7 @@ function validation(){
 		Passflag = true;
 		pass.classList.remove('error');
 	}
-	if(Lodinflag == true && Passflag){
+	if(Loginflag == true && Passflag){
 		return true;
 	}else{
 		return false;
