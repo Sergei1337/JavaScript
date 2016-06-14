@@ -24,9 +24,15 @@ function validation(){
 		pass.classList.remove('error');
 	}
 	if(Loginflag == true && Passflag){
-		if(login.value=="user" && pass.value=="12345")
-		return true;
-	}else{
+		if(login.value=="user" && pass.value=="12345"){
+			p1.classList.add('ErrorOff')
+			return true;
+		}else{
+			p1.classList.add('ErrorOn');
+			return false;
+		}
+	}
+	else{
 		return false;
 	}
 }
